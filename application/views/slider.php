@@ -5,7 +5,6 @@
                         <div class="flexslider">
                             <ul class="slides">
  <img src="/public/img/slider/1.jpg" />
-                               
                              
                             </ul>
                         </div>
