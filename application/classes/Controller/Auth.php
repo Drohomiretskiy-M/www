@@ -23,10 +23,11 @@ class Controller_Auth extends Controller_Common {
 
                   if($auth->login($login, $password))
                       {
-                       // $session = Session::instance();
-                     //   $auth_redire = $session->get('auth_redirect', '')
-                        $this->redirect('');
-                        // $session->delet('auth_redirect');
+                      // $session = Session::instance();
+                      // $authredire = $session->get('authredirect', '')
+                      // $session->delete('auth_redirect');
+                       $this->redirect('');
+                     
                       }
                   else
                       {
@@ -73,7 +74,8 @@ class Controller_Auth extends Controller_Common {
 
         if ($passwordr == $passwordtr) 
           {
-            if ($register->register($lastnamer, $firstnamer,  $middlenamer, $loginr, $passwordr, $passwordtr, $emailr, 1)) 
+            //$lastnamer, $firstnamer,  $middlenamer, $loginr, $passwordr, $passwordtr, $emailr, 1
+            if ($register->register($loginr, $passwordr, $passwordtr, $emailr)) 
             {
              $data['regok'] = '';
             }
@@ -84,7 +86,7 @@ class Controller_Auth extends Controller_Common {
           }
         else 
           {
-          $data['errors'] =' $register->errors';
+          $data['errors'] ='';
           }
         
       }
