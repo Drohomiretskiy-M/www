@@ -20,6 +20,8 @@ class Model_Register
         $passh = $auth->hash_password($passwordr);
         $user->password = $passh;
         $user->email = $emailr;
+       
+
         $user->save();
         $adduser->save();
 

@@ -34,7 +34,7 @@ $("#other").hide();
 <? } ?>
 <?php if(isset($errors)) {?>
  
-<p style="color:red"> <?php echo $errors; ?> </p>
+<p style="color:red">  Ви НЕ зареєструвалися </p>
 
 <?php } ?>
 <h4>

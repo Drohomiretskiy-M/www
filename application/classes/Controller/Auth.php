@@ -66,16 +66,22 @@ class Controller_Auth extends Controller_Common
 
             $register = new Model_Register();
 
-            if ($passwordr == $passwordtr) {
+            if ($passwordr == $passwordtr and $loginr !='' and $passwordr !='') {
                 //$lastnamer, $firstnamer,  $middlenamer, $loginr, $passwordr, $passwordtr, $emailr, 1
                 if ($register->register($loginr, $passwordr, $passwordtr, $emailr, 1)) {
                     $data['regok'] = '';
-                } else {
+                    } 
+
+                else {
                     $data['errors'] = '';
-                }
-            } else {
-                $data['errors'] = '';
+                     }
             }
+
+
+
+        else {
+            $data['errors'] = '';
+             }
 
         }
 
