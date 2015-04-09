@@ -59,16 +59,17 @@ class Controller_Auth extends Controller_Common
            // $lastnamer = Arr::get($_POST, 'lastnamer', '');
            // $firstnamer = Arr::get($_POST, 'firstnamer', '');
            // $middlenamer = Arr::get($_POST, 'middlenamer', '');
+            $roler = Arr::get($_POST, 'roler', '');
             $loginr = Arr::get($_POST, 'loginr', '');
             $passwordr = Arr::get($_POST, 'passwordr', '');
             $passwordtr = Arr::get($_POST, 'passwordtr', '');
             $emailr = Arr::get($_POST, 'emailr', '');
-
+            
             $register = new Model_Register();
 
             if ($passwordr == $passwordtr and $loginr !='' and $passwordr !='') {
                 //$lastnamer, $firstnamer,  $middlenamer, $loginr, $passwordr, $passwordtr, $emailr, 1
-                if ($register->register($loginr, $passwordr, $passwordtr, $emailr, 1)) {
+                if ($register->register($loginr, $passwordr, $passwordtr, $emailr, $roler)) {
                     $data['regok'] = '';
                     } 
 

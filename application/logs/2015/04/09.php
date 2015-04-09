@@ -1149,3 +1149,52 @@
 #10 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
 #11 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
 #12 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 22:20:21 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: role ~ APPPATH\classes\Model\Register.php [ 34 ] in Z:\home\kohana\www\application\classes\Model\Register.php:34
+2015-04-09 22:20:21 --- DEBUG: #0 Z:\home\kohana\www\application\classes\Model\Register.php(34): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 34, Array)
+#1 Z:\home\kohana\www\application\classes\Controller\Auth.php(72): Model_Register->register('7', '7', '7', '772@77.2', '3')
+#2 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_register()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#5 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#8 {main} in Z:\home\kohana\www\application\classes\Model\Register.php:34
+2015-04-09 22:20:40 --- CRITICAL: Database_Exception [ 1062 ]: Duplicate entry '7' for key 'uniq_username' [ INSERT INTO `users` (`username`, `password`, `email`) VALUES ('7', '0dbc23871dbbc75259306f4a354d17b0511a72c3b736d8359465a92be61a1ad3', '772@77.2') ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php:251
+2015-04-09 22:20:40 --- DEBUG: #0 Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'INSERT INTO `us...', false, Array)
+#1 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1324): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1421): Kohana_ORM->create(NULL)
+#3 Z:\home\kohana\www\application\classes\Model\Register.php(25): Kohana_ORM->save()
+#4 Z:\home\kohana\www\application\classes\Controller\Auth.php(72): Model_Register->register('7', '7', '7', '772@77.2', '3')
+#5 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_register()
+#6 [internal function]: Kohana_Controller->execute()
+#7 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#10 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#11 {main} in Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php:251
+2015-04-09 23:45:23 --- CRITICAL: Database_Exception [ 1062 ]: Duplicate entry '8787' for key 'uniq_username' [ INSERT INTO `users` (`username`, `password`, `email`) VALUES ('8787', '1ab709c468f15347b840495fc63c691330a14d6cea0277556b5dc64adf7aa3aa', '87@7.e') ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php:251
+2015-04-09 23:45:23 --- DEBUG: #0 Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'INSERT INTO `us...', false, Array)
+#1 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1324): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1421): Kohana_ORM->create(NULL)
+#3 Z:\home\kohana\www\application\classes\Model\Register.php(25): Kohana_ORM->save()
+#4 Z:\home\kohana\www\application\classes\Controller\Auth.php(72): Model_Register->register('8787', '8787', '8787', '87@7.e', '1')
+#5 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_register()
+#6 [internal function]: Kohana_Controller->execute()
+#7 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#10 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#11 {main} in Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php:251
+2015-04-09 23:47:08 --- CRITICAL: Database_Exception [ 1062 ]: Duplicate entry '33' for key 'uniq_username' [ INSERT INTO `users` (`username`, `password`, `email`) VALUES ('33', '4acccdb321d3c9d1158f262de37a30b1c3da3d8f32d4214b4629b044d29c21ec', '6@6.k6') ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php:251
+2015-04-09 23:47:08 --- DEBUG: #0 Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'INSERT INTO `us...', false, Array)
+#1 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1324): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1421): Kohana_ORM->create(NULL)
+#3 Z:\home\kohana\www\application\classes\Model\Register.php(25): Kohana_ORM->save()
+#4 Z:\home\kohana\www\application\classes\Controller\Auth.php(72): Model_Register->register('33', '66', '66', '6@6.k6', '2')
+#5 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_register()
+#6 [internal function]: Kohana_Controller->execute()
+#7 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#10 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#11 {main} in Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php:251
