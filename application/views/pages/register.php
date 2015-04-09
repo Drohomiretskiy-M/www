@@ -33,10 +33,9 @@ $("#other").hide();
 <p style="color:green"> Ви успішно зареєструвалися</p> 
 <? } ?>
 <?php if(isset($errors)) {?>
-<?php foreach ($errors as $item) { ?>
  
-<p style="color:red"> <?php echo $item; ?> </p>
-<?php } ?>
+<p style="color:red"> <?php echo $errors; ?> </p>
+
 <?php } ?>
 <h4>
   <table align="center">

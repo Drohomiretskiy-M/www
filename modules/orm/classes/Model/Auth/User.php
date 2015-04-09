@@ -31,13 +31,16 @@ class Model_Auth_User extends ORM {
 	{
 		return array(
 			'username' => array(
+				//array('not_empty'),
+				//array('max_length', array(':value', 32)),
+				//array(array($this, 'unique'), array('username', ':value')),
 			),
 			'password' => array(
-				array('not_empty'),
+				//array('not_empty'),
 			),
 			'email' => array(
-				array('not_empty'),
-				array('email'),
+				//array('not_empty'),
+				//array('email'),
 				array(array($this, 'unique'), array('email', ':value')),
 			),
 		);

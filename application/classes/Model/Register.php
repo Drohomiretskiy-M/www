@@ -7,7 +7,7 @@ class Model_Register
 
     {
 
-        $myuser = new Model_Myuser();
+        $user = new Model_Myuser();
         $adduser = new Model_Adduser();
         $addrole = new Model_Addrole();
 
@@ -16,11 +16,11 @@ class Model_Register
         // $adduser->lastname= $lastnamer;
         // $adduser->firstname= $firstnamer;
         // $adduser->middlename= $middlenamer;
-        $myuser->username = $loginr;
+        $user->username = $loginr;
         $passh = $auth->hash_password($passwordr);
-        $myuser->password = $passh;
-        $myuser->email = $emailr;
-        $myuser->save();
+        $user->password = $passh;
+        $user->email = $emailr;
+        $user->save();
         $adduser->save();
 
         //узнаємо id
@@ -37,7 +37,7 @@ class Model_Register
        // $adduser->save();
 
 
-       // return TRUE;
+        return TRUE;
 
     }
 

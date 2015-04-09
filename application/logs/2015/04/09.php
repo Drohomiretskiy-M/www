@@ -1024,3 +1024,128 @@
 #10 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
 #11 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
 #12 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 15:26:27 --- CRITICAL: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH\orm\classes\Kohana\ORM.php [ 1275 ] in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 15:26:27 --- DEBUG: #0 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1362): Kohana_ORM->check(NULL)
+#1 Z:\home\kohana\www\modules\orm\classes\Model\Auth\User.php(91): Kohana_ORM->update()
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(274): Model_Auth_User->complete_login()
+#3 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(111): Kohana_Auth_ORM->complete_login(Object(Model_User))
+#4 Z:\home\kohana\www\modules\auth\classes\Kohana\Auth.php(92): Kohana_Auth_ORM->_login('misha', 'misha', false)
+#5 Z:\home\kohana\www\application\classes\Controller\Auth.php(21): Kohana_Auth->login('misha', 'misha')
+#6 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_index()
+#7 [internal function]: Kohana_Controller->execute()
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#11 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#12 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 15:26:58 --- CRITICAL: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH\orm\classes\Kohana\ORM.php [ 1275 ] in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 15:26:58 --- DEBUG: #0 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1362): Kohana_ORM->check(NULL)
+#1 Z:\home\kohana\www\modules\orm\classes\Model\Auth\User.php(91): Kohana_ORM->update()
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(274): Model_Auth_User->complete_login()
+#3 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(111): Kohana_Auth_ORM->complete_login(Object(Model_User))
+#4 Z:\home\kohana\www\modules\auth\classes\Kohana\Auth.php(92): Kohana_Auth_ORM->_login('misha', 'misha', false)
+#5 Z:\home\kohana\www\application\classes\Controller\Auth.php(21): Kohana_Auth->login('misha', 'misha')
+#6 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_index()
+#7 [internal function]: Kohana_Controller->execute()
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#11 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#12 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 15:34:09 --- CRITICAL: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH\orm\classes\Kohana\ORM.php [ 1275 ] in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 15:34:09 --- DEBUG: #0 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1362): Kohana_ORM->check(NULL)
+#1 Z:\home\kohana\www\modules\orm\classes\Model\Auth\User.php(91): Kohana_ORM->update()
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(274): Model_Auth_User->complete_login()
+#3 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(111): Kohana_Auth_ORM->complete_login(Object(Model_User))
+#4 Z:\home\kohana\www\modules\auth\classes\Kohana\Auth.php(92): Kohana_Auth_ORM->_login('misha', 'misha', false)
+#5 Z:\home\kohana\www\application\classes\Controller\Auth.php(21): Kohana_Auth->login('misha', 'misha')
+#6 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_index()
+#7 [internal function]: Kohana_Controller->execute()
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#11 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#12 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 15:34:18 --- CRITICAL: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH\orm\classes\Kohana\ORM.php [ 1275 ] in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 15:34:18 --- DEBUG: #0 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1362): Kohana_ORM->check(NULL)
+#1 Z:\home\kohana\www\modules\orm\classes\Model\Auth\User.php(91): Kohana_ORM->update()
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(274): Model_Auth_User->complete_login()
+#3 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(111): Kohana_Auth_ORM->complete_login(Object(Model_User))
+#4 Z:\home\kohana\www\modules\auth\classes\Kohana\Auth.php(92): Kohana_Auth_ORM->_login('misha', 'misha', false)
+#5 Z:\home\kohana\www\application\classes\Controller\Auth.php(21): Kohana_Auth->login('misha', 'misha')
+#6 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_index()
+#7 [internal function]: Kohana_Controller->execute()
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#11 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#12 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 16:29:17 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_User::unique_key() ~ MODPATH\orm\classes\Kohana\Auth\ORM.php [ 80 ] in file:line
+2015-04-09 16:29:17 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-04-09 16:29:37 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_User::unique_key() ~ MODPATH\orm\classes\Kohana\Auth\ORM.php [ 80 ] in file:line
+2015-04-09 16:29:37 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-04-09 16:30:39 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_User::unique_key() ~ MODPATH\orm\classes\Kohana\Auth\ORM.php [ 80 ] in file:line
+2015-04-09 16:30:39 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-04-09 16:30:47 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_User::unique_key() ~ MODPATH\orm\classes\Kohana\Auth\ORM.php [ 80 ] in file:line
+2015-04-09 16:30:47 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-04-09 16:33:54 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_User::unique_key() ~ MODPATH\orm\classes\Kohana\Auth\ORM.php [ 80 ] in file:line
+2015-04-09 16:33:54 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-04-09 16:34:46 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_User::unique_key() ~ MODPATH\orm\classes\Kohana\Auth\ORM.php [ 80 ] in file:line
+2015-04-09 16:34:46 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-04-09 16:35:30 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_User::unique_key() ~ MODPATH\orm\classes\Kohana\Auth\ORM.php [ 80 ] in file:line
+2015-04-09 16:35:30 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-04-09 16:35:37 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_User::unique_key() ~ MODPATH\orm\classes\Kohana\Auth\ORM.php [ 80 ] in file:line
+2015-04-09 16:35:37 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-04-09 16:35:55 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_User::unique_key() ~ MODPATH\orm\classes\Kohana\Auth\ORM.php [ 80 ] in file:line
+2015-04-09 16:35:55 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-04-09 16:38:47 --- CRITICAL: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH\orm\classes\Kohana\ORM.php [ 1275 ] in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 16:38:47 --- DEBUG: #0 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1362): Kohana_ORM->check(NULL)
+#1 Z:\home\kohana\www\modules\orm\classes\Model\Auth\User.php(94): Kohana_ORM->update()
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(274): Model_Auth_User->complete_login()
+#3 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(111): Kohana_Auth_ORM->complete_login(Object(Model_User))
+#4 Z:\home\kohana\www\modules\auth\classes\Kohana\Auth.php(92): Kohana_Auth_ORM->_login('asasas', 'asasas', false)
+#5 Z:\home\kohana\www\application\classes\Controller\Auth.php(21): Kohana_Auth->login('asasas', 'asasas')
+#6 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_index()
+#7 [internal function]: Kohana_Controller->execute()
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#11 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#12 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 16:43:38 --- CRITICAL: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH\orm\classes\Kohana\ORM.php [ 1275 ] in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 16:43:38 --- DEBUG: #0 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1362): Kohana_ORM->check(NULL)
+#1 Z:\home\kohana\www\modules\orm\classes\Model\Auth\User.php(94): Kohana_ORM->update()
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(274): Model_Auth_User->complete_login()
+#3 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(111): Kohana_Auth_ORM->complete_login(Object(Model_User))
+#4 Z:\home\kohana\www\modules\auth\classes\Kohana\Auth.php(92): Kohana_Auth_ORM->_login('user4', 'user4', false)
+#5 Z:\home\kohana\www\application\classes\Controller\Auth.php(21): Kohana_Auth->login('user4', 'user4')
+#6 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_index()
+#7 [internal function]: Kohana_Controller->execute()
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#11 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#12 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 16:44:53 --- CRITICAL: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH\orm\classes\Kohana\ORM.php [ 1275 ] in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362
+2015-04-09 16:44:53 --- DEBUG: #0 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1362): Kohana_ORM->check(NULL)
+#1 Z:\home\kohana\www\modules\orm\classes\Model\Auth\User.php(94): Kohana_ORM->update()
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(274): Model_Auth_User->complete_login()
+#3 Z:\home\kohana\www\modules\orm\classes\Kohana\Auth\ORM.php(111): Kohana_Auth_ORM->complete_login(Object(Model_User))
+#4 Z:\home\kohana\www\modules\auth\classes\Kohana\Auth.php(92): Kohana_Auth_ORM->_login('user4321', 'user4321', false)
+#5 Z:\home\kohana\www\application\classes\Controller\Auth.php(21): Kohana_Auth->login('user4321', 'user4321')
+#6 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Auth->action_index()
+#7 [internal function]: Kohana_Controller->execute()
+#8 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Auth))
+#9 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 Z:\home\kohana\www\system\classes\Kohana\Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#11 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#12 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:1362

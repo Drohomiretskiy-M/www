@@ -39,7 +39,7 @@ class Controller_Auth extends Controller_Common
     public function action_hpass()
     {
         $auth = Auth::instance();
-        $this->template->content = $auth->hash_password('asasas');
+        $this->template->content = $auth->hash_password('user4321');
 
 
     }
@@ -56,9 +56,9 @@ class Controller_Auth extends Controller_Common
     {
         $data = array('');
         if (isset($_POST['btnreg'])) {
-            $lastnamer = Arr::get($_POST, 'lastnamer', '');
-            $firstnamer = Arr::get($_POST, 'firstnamer', '');
-            $middlenamer = Arr::get($_POST, 'middlenamer', '');
+           // $lastnamer = Arr::get($_POST, 'lastnamer', '');
+           // $firstnamer = Arr::get($_POST, 'firstnamer', '');
+           // $middlenamer = Arr::get($_POST, 'middlenamer', '');
             $loginr = Arr::get($_POST, 'loginr', '');
             $passwordr = Arr::get($_POST, 'passwordr', '');
             $passwordtr = Arr::get($_POST, 'passwordtr', '');
