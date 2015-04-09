@@ -76,7 +76,20 @@ $("#other").hide();
     </tr>
     <tr>
       <td>Категорія користувача: </td>
-      <td> <input type="checkbox" id="check" name="check"> Фотограф </td>
+      <td> <!--<input type="checkbox"  > Фотограф -->
+<select class="form-control" name="check" >
+  <option value="1" id="check">Гість</option>
+  <option value="3" id="check">Фотограф</option>
+  <option value="2" id="check">Адміністратор</option>
+ 
+</select>
+
+
+
+
+
+
+      </td>
     </tr>
 
     <tr id="other" style="display:none">
