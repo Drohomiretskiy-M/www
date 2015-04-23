@@ -7,20 +7,22 @@ $("#hide").click(function(){
 $("#other").hide();
 $("#other1").hide();
 });
-$("#check").click(function(){
-if ($('#check:checked').val() !== undefined)
-{
-$("#other").show(); //Чекнуто
-$("#other1").show();
-}
-else
-{
-$("#other").hide();
- $("#other1").hide(); //НЕ чекнуто
-}
+$("#fotograf").click(function(){
+    if ($('#fotograf:checked').val() !== undefined)
+          {
+            $("#other").show(); //Чекнуто
+            $("#other1").show();
+          }
+    else
+          {
+            $("#other").hide();
+            $("#other1").hide(); //НЕ чекнуто
+          }
 
 });
 });
+
+
 </script>
 <form action='' method='post'>
 
@@ -77,10 +79,10 @@ $("#other").hide();
     <tr>
       <td>Категорія користувача: </td>
       <td> <!--<input type="checkbox"  > Фотограф -->
-<select class="form-control" name="check" >
-  <option value="1" id="check">Гість</option>
-  <option value="3" id="check">Фотограф</option>
-  <option value="2" id="check">Адміністратор</option>
+<select class="form-control" name="roler" >
+  <option value="1" id="user">Гість</option>
+  <option value="3" id="fotograf">Фотограф</option>
+  <option value="2" id="admin">Адміністратор</option>
  
 </select>
 
@@ -94,11 +96,11 @@ $("#other").hide();
 
     <tr id="other" style="display:none">
       <td>Опис: </td>
-      <td><textarea rows="10" cols="45" name="text"></textarea></td>
+      <td><input type="text" class="form-control" placeholder="Опис"></td>
     </tr>
      <tr id="other1" style="display:none">
-      <td>Опис: </td>
-      <td><textarea rows="10" cols="45" name="text"></textarea></td>
+      <td>Інша інформація: </td>
+      <td><textarea rows="5" cols="45" name="text"></textarea></td>
     </tr>
 
    

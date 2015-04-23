@@ -9,9 +9,9 @@ class Controller_Auth extends Controller_Common
         $data = array();
 
 
-        if ($auth->logged_in() != 0) {
+        if ($auth->logged_in('login') == 1) {
             //Залогінений
-            $this->redirect('');
+            $this->redirect('acount');
         } else {
             //не залогінений
             if (isset($_POST['btauth'])) {
@@ -22,7 +22,7 @@ class Controller_Auth extends Controller_Common
                     // $session = Session::instance();
                     // $authredire = $session->get('authredirect', '')
                     // $session->delete('auth_redirect');
-                    $this->redirect('');
+                    $this->redirect('auth');
 
                 } else {
                     $data['error'] = '';
