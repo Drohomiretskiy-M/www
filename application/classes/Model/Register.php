@@ -3,7 +3,7 @@
 class Model_Register
 {
 
-    public function register($loginr, $passwordr, $passwordtr, $emailr, $roler)
+    public function register($loginr, $passwordr, $passwordtr, $emailr, $role)
 
     {
 
@@ -31,7 +31,7 @@ class Model_Register
 
         // додання ролі
         $addrole->user_id = $adduserid;
-        $addrole->role_id = $roler;
+        $addrole->role_id = $role;
         $addrole->save();
 
         //додання інфи про користувача
